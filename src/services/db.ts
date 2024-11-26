@@ -8,8 +8,6 @@ const uri = process.env.DB_CONN_STRING || 'connection-string';
 let client: MongoClient;
 let db: Db;
 
-console.log("Process env: ", process.env.DB_NAME)
-
 export const connectDB = async () => {
   if (!client) {
     client = new MongoClient(uri);
