@@ -22,3 +22,12 @@ export const connectDB = async () => {
 export const closeDB = async () => {
   if (client) await client.close();
 };
+
+export const returnCollection = async () => {
+  try {
+    const db = await connectDB();
+    return db.collection("books-list");
+  } catch (err) {
+    console.error("Error:", err);
+  }
+};
