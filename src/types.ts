@@ -8,4 +8,5 @@ export type BookSchema = {
 export type UserSchema = {
   name: string;
   password: string;
+  role: string;
 }
