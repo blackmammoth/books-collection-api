@@ -40,7 +40,7 @@ router.delete(
 router.get(
   "/books/recommendations",
   authenticateToken,
-  authorizeRoles("admin", "users"),
+  authorizeRoles("admin", "user"),
   getRandomBookController
 );
 

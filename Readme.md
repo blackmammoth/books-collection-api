@@ -30,10 +30,11 @@
 ```
 
 - After receiving the token, copy and paste it inside `Bearer` inside the `Authorization` header when making a request to the following book api routes:
-  - To get all books: `GET \books` - This route is protected and only users with the role `admin` can access it.
-  - To create a book: `POST \books` - This route is protected and only users with the role `admin` and `user` can access it.
-  - To update a book: `PUT \books\{id}` - This route is protected and only users with the role `admin` and `user` can access it.
-  - To delete a book: `DELETE \books\{id}` - This route is protected and only users with the role `admin` can access it.
+  - To get all books: `GET \api\books\all` - This route is protected and only users with the role `admin` can access it.
+  - To create a book: `POST \api\books` - This route is protected and only users with the role `admin` and `user` can access it.
+  - To update a book: `PUT \api\books\{id}` - This route is protected and only users with the role `admin` and `user` can access it.
+  - To delete a book: `DELETE \api\books\{id}` - This route is protected and only users with the role `admin` can access it.
+  - `GET \api\books\recomendations` - This route is protected and only users with the role `admin` and `user` can access it.
 
 ## Note
 
