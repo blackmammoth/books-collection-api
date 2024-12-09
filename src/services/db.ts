@@ -21,10 +21,10 @@ export const closeDB = async () => {
   if (client) await client.close();
 };
 
-export const returnCollection = async () => {
+export const returnCollection = async (collection_name: string = "books-list") => {
   try {
     const db = await connectDB();
-    return db.collection("books-list");
+    return db.collection(collection_name);
   } catch (err) {
     console.error("Error:", err);
   }
